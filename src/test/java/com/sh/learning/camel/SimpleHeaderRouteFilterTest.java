@@ -49,7 +49,11 @@ public class SimpleHeaderRouteFilterTest extends CamelTestSupport {
         return new RouteBuilder() {
             @Override
             public void configure() throws Exception {
-                from("direct:start").filter(header("attr").isEqualTo("goodAttr")).to("mock:result");
+                from("direct:start")
+                        .id("routeId")
+                        .routeId("routeId")
+                        .filter(header("attr").isEqualTo("goodAttr")).id("filterId")
+                        .to("mock:result");
             }
         };
     }
