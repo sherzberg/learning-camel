@@ -1,3 +1,5 @@
+.. image: https://travis-ci.org/whelmingbytes/learning-camel.png?branch=master
+
 Learning Camel
 ==============
 
