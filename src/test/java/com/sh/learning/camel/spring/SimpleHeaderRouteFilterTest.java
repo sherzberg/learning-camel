@@ -1,4 +1,4 @@
-package com.sh.learning.camel;
+package com.sh.learning.camel.spring;
 
 import org.apache.camel.EndpointInject;
 import org.apache.camel.Produce;
